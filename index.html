@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>지현여행사</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		var mySlider = $(".slider").bxSlider({
+			/*auto:true,*/
+			mode:"vertical",
+			controls:false,
+			pagerCustom:".bx-pager",
+			touchEnabled:false
+		});
+	});
+	</script>
+	
+	
+	
+
+
+
+
+</head>
+
+<body>
+	<!-- 헤더시작 -->
+	<div id="header">
+		<div class="header-tnb">
+			<div class="tnb-menu ">
+				<ul class="logo">
+					<li>
+						<a href="index.html"><img src="img/logo.png" alt="로고">
+						<p><strong>TRAVEL</strong><br>지현미디어</p></a>
+					</li>
+				</ul>
+				<div class="search">
+				    <form action="#" method="method">
+				        <fieldset>
+				            <p class="fd">
+				                <label for="search">SEARCH</label>
+				                <input type="text" id="search" name="search" placeholder="검색어를 입력하세요" class="inp-fd">
+				                <img src="img/search.png" alt="">
+				            </p>
+				        </fieldset>
+				    </form>
+				</div>
+				<ul class="icon">
+					<li>
+						<p>+82 02 1234 5678</p>
+						<img src="img/ficom1.png"> <img src="img/ficom2.png"> <img src="img/ficom3.png"> <img src="img/ficom4.png">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header-gnb">
+			<nav class="menu ">
+				<ul>
+					<li><a href="sub.html">여행도시</a>
+					<div class="overlay">
+					    <a href="sub.html">여행도시</a>
+					</div>
+					</li>
+					<li><a href="sub.html">호텔예약</a>
+					<div class="overlay">
+					    <a href="sub.html">호텔예약</a>
+					</div>
+					</li>
+					<li><a href="sub.html">렌트카</a>
+					    <div class="overlay">
+					    <a href="sub.html">렌트카</a>
+					</div>
+					</li>
+					<li><a href="sub.html">여행TIP<sup>N</sup></a>
+					    <div class="overlay">
+					    <a href="sub.html">여행TIP<sup>N</sup></a>
+					</div>
+					
+					</li>
+					<li><a href="sub.html">회사소개</a>
+					    <div class="overlay">
+					    <a href="sub.html">회사소개</a>
+					</div>
+					
+					</li>
+					<li><a href="sub.html">커뮤니티</a>
+					    <div class="overlay">
+					    <a href="sub.html">커뮤니티</a>
+					</div>
+					
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- 헤더영역 끝 -->
+	<!-- container 시작 -->
+	<div id="container">
+		<h2>TRAVEL <span>GO</span></h2>
+		<p>지금, 여행이 떠나고 싶다면?<br>지현미디어와 여행을 떠나자<i>!</i></p>
+		<ul class="main-img">
+			<li class="img01">
+			<img src="img/02ps.png" alt=""></li>
+			<li class="img02"><img src="img/ps2.png" alt=""></li>
+			<li class="img03"><img src="img/Flying.png" alt="비행기"></li>
+		</ul>
+		<div class="contentWrap">
+			<div class="content1 clearfix">
+			
+				<div class="box1">
+                   <div class="slider_pager">
+						<div class="bx-pager">
+							<a href="#" data-slide-index="0">
+								<p class="ot">공항예약</p>
+								<p class="at">공항예약</p>
+							</a>
+							
+							<a href="#" data-slide-index="1">
+								
+								<p class="ot">호텔예약</p>
+								<p class="at">호텔예약</p>
+							</a>
+							
+							<a href="#" data-slide-index="2" >
+								
+								<p class="ot">렌 터 카</p>
+								<p class="at">렌 터 카</p>
+							</a>
+							
+							<a href="#" data-slide-index="3" >
+								
+								<p class="ot">휴 양 지</p>
+								<p class="at">휴 양 지</p>
+							</a>
+							
+						</div>
+				</div>
+					<ul class="slider">
+						<li>
+							<div class="choice">
+								<form action="update.php" class="f_layer">
+									<fieldset>
+										<legend>공항예약</legend>
+											<ul>
+												<li>
+													<label for="golo">가고싶은 나라를 선택하세요.</label>
+													<select name="nara" id="golo">
+														<option value="">선택하세요.</option>
+														<option value="국내">국내</option>
+														<option value="미국">미국</option>
+														<option value="일본">일본</option>
+														<option value="중국">중국</option>
+													</select>
+												</li>
+												<li>
+													<div class="sleft">
+														<label for="sdate">출발일</label>
+														<input type="date" id="sdate">
+													</div>
+													<div class="sright">
+														<label for="edate">도착일</label>
+														<input type="date" id="edate">
+													</div>
+												</li>
+												<li>
+													<div class="eleft">
+														<label for="cgrade">좌석등급</label>
+														<select name="cgrade" id="cgrade">
+															<option value="비지니스">비지니스</option>
+															<option value="이코노미">이코노미</option>
+														</select>
+													</div>
+													<div class="eright1">
+														<label for="num">성인</label>
+														<input type="number" id="num" placeholder="1">
+													</div>
+													<div class="eright2">
+														<label for="num">아이</label>
+														<input type="number" id="num" placeholder="1">
+													</div>
+												</li>
+												<li>
+													<div class="btn-area">
+														<input type="submit" value="검색하기" class="btn-submit">
+													</div>
+												</li>
+											</ul>
+										</fieldset>
+									</form>
+								</div>
+						</li>
+						<li>
+							<div class="choice">
+								<form action="update.php" class="f_layer">
+									<fieldset>
+										<legend>호텔예약</legend>
+											<ul>
+												<li>
+													<label for="golo">호텔을 선택해 주세요.</label>
+													<select name="nara" id="golo">
+														<option value="">선택하세요.</option>
+														<option value="국내">국내</option>
+														<option value="해외">해외</option>
+														<option value="유럽">유럽</option>
+														<option value="중국">중국</option>
+														<option value="동남아">동남아</option>
+													</select>
+												</li>
+												<li>
+													<div class="sleft">
+														<label for="sdate">체크인</label>
+														<input type="date" id="sdate">
+													</div>
+													<div class="sright">
+														<label for="edate">체크아웃</label>
+														<input type="date" id="edate">
+													</div>
+												</li>
+												<li>
+													<div class="eleft">
+														<label for="cgrade">호텔등급</label>
+														<select name="cgrade" id="cgrade">
+															<option value="5성급">5성급</option>
+															<option value="4성급">4성급</option>
+												            <option value="호텔">호텔</option>
+												             <option value="콘도">콘도</option>
+														</select>
+													</div>
+													<div class="eright1">
+														<label for="num">성인</label>
+														<input type="number" id="num" placeholder="1">
+													</div>
+													<div class="eright2">
+														<label for="num">아이</label>
+														<input type="number" id="num" placeholder="1">
+													</div>
+												</li>
+												<li>
+													<div class="btn-area">
+														<input type="submit" value="검색하기" class="btn-submit">
+													</div>
+												</li>
+											</ul>
+										</fieldset>
+									</form>
+								</div>
+						</li>
+						<li>
+							<div class="choice">
+								<form action="update.php" class="f_layer">
+									<fieldset>
+										<legend>렌터카</legend>
+											<ul>
+												<li>
+													<label for="golo">렌터카 예약</label>
+													<select name="nara" id="golo">
+														<option value="">선택하세요.</option>
+														<option value="미국">장기렌터</option>
+														<option value="일본">단기렌터</option>
+														<option value="중국">시간렌터</option>
+													</select>
+												</li>
+												<li>
+													<div class="sleft">
+														<label for="sdate">대여일</label>
+														<input type="date" id="sdate">
+													</div>
+													<div class="sright">
+														<label for="edate">반납일</label>
+														<input type="date" id="edate">
+													</div>
+												</li>
+												<li>
+													<div class="eleft">
+														<label for="cgrade">차종</label>
+														<select name="cgrade" id="cgrade">
+															<option value="대형">대형</option>
+															<option value="중형">중형</option>
+															<option value="중형">소형</option>
+														</select>
+													</div>
+													<div class="eright1">
+														<label for="num">탑승인</label>
+														<input type="number" id="num" placeholder="1">
+													</div>
+													<div class="eright2">
+														<label for="num">차량대수</label>
+														<input type="number" id="num" placeholder="1">
+													</div>
+												</li>
+												<li>
+													<div class="btn-area">
+														<input type="submit" value="검색하기" class="btn-submit">
+													</div>
+												</li>
+											</ul>
+										</fieldset>
+									</form>
+								</div>
+						</li>
+						<li>
+							<div class="choice">
+								<form action="update.php" class="f_layer">
+									<fieldset>
+										<legend>휴양지</legend>
+											<ul>
+												<li>
+													<label for="golo">가고싶은 나라를 선택하세요.</label>
+													<select name="nara" id="golo">
+														<option value="">선택하세요.</option>
+														<option value="국내">국내</option>
+														<option value="미국">미국</option>
+														<option value="일본">일본</option>
+														<option value="중국">중국</option>
+													</select>
+												</li>
+												<li>
+													<div class="sleft">
+														<label for="sdate">출발일</label>
+														<input type="date" id="sdate">
+													</div>
+													<div class="sright">
+														<label for="edate">도착일</label>
+														<input type="date" id="edate">
+													</div>
+												</li>
+												<li>
+													<div class="eleft">
+														<label for="cgrade">추천코스</label>
+														<select name="cgrade" id="cgrade">
+															<option value="도시">도시</option>
+															<option value="바다">바다</option>
+															<option value="산">산</option>
+															<option value="계곡">계곡</option>
+															<option value="섬">섬</option>
+														</select>
+													</div>
+													<div class="eright1">
+														<label for="num">성인</label>
+														<input type="number" id="num" placeholder="1">
+													</div>
+													<div class="eright2">
+														<label for="num">아이</label>
+														<input type="number" id="num" placeholder="1">
+													</div>
+												</li>
+												<li>
+													<div class="btn-area">
+														<input type="submit" value="검색하기" class="btn-submit">
+													</div>
+												</li>
+											</ul>
+										</fieldset>
+									</form>
+								</div>
+						</li>
+					</ul>
+				   
+				</div>
+				    
+				
+				
+				<div class="box2">
+					<ul>
+						<li>
+							<img src="img/trpe01.png" alt="">
+							<div class="text">
+								<p>프랑스<span>￦1,900,000 </span>〉</p>
+							</div>
+						</li>
+						<li>
+						    <img src="img/trpe02.png" alt="">
+							<div class="text">
+								<p>일본<span>￦890,000 </span>〉</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="box3">
+					<ul>
+						<li>
+							<img src="img/trpe03.png" alt="">
+							<div class="text1">
+								<p>HILLTON HOTEL (PARIS)</p>
+								<img src="img/st.png">
+							</div>
+						</li>
+						<li>
+							<img src="img/trpe04.png" alt="">
+							<div class="text2">
+								<p>20ºc 관광명소(디즈니랜드)</p>
+								<img src="img/st.png">
+
+							</div>
+						</li>
+						<li class="">
+							<img src="img/trpe05.png" alt="">
+							<div class="text3">
+								<p>20ºc 구름조금</p>
+								<span>습도 60% 바람 남남동 2m/s</span>
+							</div>
+						</li>
+						<li class="">
+							<img src="img/trpe.png" alt="">
+							<ul class="snt"><li><p>"해외여행은 처음이었는데,<br>지현미디어여행 덕분에 무사히<br>다녀올 수 있었어요"</p></li>
+							<li><span>프랑스 파리 자유여행</span></li>
+							<li><a href="">★★★★★</a></li>
+							
+							</ul>
+							
+							<div class="text4">
+								<p><strong>facebook</strong> 여행후기</p>
+								<span>(임정희님)</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="box4">
+					<ul>
+						<li>
+							<img src="img/trpe7.png" alt="">
+                            <div class="bgcs"></div>
+				            <div class="text">
+								<img src="img/jgicon.png">
+								<h3>여행정보</h3>
+								<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+							</div>
+				            <img src="img/plusicon.png" class="icon">
+						</li>
+						<li>
+							<img src="img/trpe8.png" alt="">
+                            <div class="bgcs"></div>
+				            <div class="text">
+								<img src="img/mjicon.png">
+								<h3>맛집정보</h3>
+								<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+							</div>
+							<img src="img/plusicon.png" class="icon">
+						</li>
+						<li>
+							<img src="img/trpe9.png" alt="">
+                            <div class="bgcs"></div>
+							 <div class="text">
+								<img src="img/sbicon.png">
+								<h3>숙박정보</h3>
+								<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+							</div>
+							<img src="img/plusicon.png" class="icon">
+							
+						</li>
+						<li>
+							<img src="img/trpe10.png" alt="">
+                            <div class="bgcs"></div>
+				            <div class="text">
+								<img src="img/mjjicon.png">
+								<h3>여행자후기</h3>
+								<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+							</div>
+							<img src="img/plusicon.png" class="icon">
+						</li>
+					</ul>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+					<div class="footermain">
+						<ul>
+							<li><a href="#">이용약관</a></li>
+							<li><a href="#"><strong>개인정보취급방침</strong></a></li>
+							<li><a href="#">사이드맵</a></li>
+							<li><a href="#">고객센터</a></li>
+							<li><a href="#">광고 및 제휴문의</a></li>
+						</ul>
+					</div>
+				<p>123-456 서울특별시 구로구 구로동 (주)지현미디어 사업자등록번호 :123-45-678910 대표이사: 김지현 대표번호 : 02-1234-5678</p>
+				<p>COPYRIGHTⓒ2014 JIHYUNMIEDIA TOUR>RIGHTS RESERBED.</p>
+				</div>
+				
+</body></html>
+	
+
+
+
+
+
+
+							
+							
+							
+						
+					
+							
+									
+												
+											
+
+							
+							
+						
+							
+
+
+							
+										
+											
+											
+											
+									
+					
+				
+				
+
+
